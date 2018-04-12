@@ -1,0 +1,520 @@
+שילה
+
+<resources>
+    <string name="app_name">AdminTools for Telegram</string>
+
+
+
+
+    <string name="ban_soft_hint">Note: official Telegram app has no internal tool for temporary ban users, so this app has own local ban-list.
+        \nUser which was temporary banned will be removed from ban list only when your device active. If you delete this app or reinstall it, ban list will be lost. You can export list in settings.</string>
+    <string name="chatOwner">Owner:</string>
+    <string name="changeChatAbout">Change description</string>
+    <string name="kickedCount">Kicked:</string>
+    <string name="adminsCount">Admins:</string>
+    <string name="participiantsCount">Participiants:</string>
+    <string name="hint_short_link_not_created">Short link not created</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="btnSave">Save</string>
+
+    <string name="error_too_many_public_links">You have created too many public channels</string>
+    <string name="error_link_already_occupied">Error: This link is already occupied</string>
+    <string name="dialog_title_edit_link">Public link</string>
+    <string name="hint_upgrade_to_supergroup">You can upgrade this group to supergroup.
+        \nIn supergroup members limit more than 200 users, new members can see entire chat history, admin delete messages for everyone, users can edit own messages, notifications are muted by default, current invite link will be revoke.</string>
+
+    <string name="input_new_chat_title">Enter new chat title</string>
+    <string name="input_edit_chat_about">Enter chat description</string>
+    <string name="titleEditChatDescription">Chat description</string>
+    <string name="action_ban_user">Ban user</string>
+    <string name="action_set_as_admin">Add to admin</string>
+    <string name="action_remove_user_from_chat">Remove user from chat</string>
+    <string name="action_manage_group">Manage chat</string>
+    <string name="action_manage_chat_users">Manage users</string>
+    <string name="action_banlist">Ban-list</string>
+    <string name="btnContinue">Continue</string>
+    <string name="create_group">Create group</string>
+    <string name="create_supergroup">Create supergroup</string>
+
+    <string name="noteAntispamLinks">Note: Rules ignored for admins.</string>
+    <string name="toast_chat_link_added">Link changed</string>
+    <string name="hint_invite_link_not_created">Click to create invite link</string>
+    <string name="hint_no_chat_about">Tap to add chat about</string>
+    <string name="generate_invite_link">Generate invite link</string>
+    <string name="generate_new_invite_link">Regenerate new invite link</string>
+    <string name="action_copy_link">Copy link to clipboard</string>
+    <string name="toast_copied_to_clipboard">Text copied to clipboard</string>
+    <string name="message_confirm_revoke_link">Are you sure to regenerate invite link?\nPrevious link will be deactivated.</string>
+    <string name="chat_title">Chat title</string>
+    <string name="action_rename">Rename</string>
+    <string name="error_empty_chat_title">Title can not be empty</string>
+    <string name="user_type_deleted">Deleted account</string>
+    <string name="online_last_seen">last seen recently</string>
+    <string name="last_seen_at">last seen at </string>
+    <string name="btnClose">Close</string>
+    <string name="revoke_user_admin">Revoke admin privilegies</string>
+    <string name="ban_reason">Ban reason</string>
+    <string name="action_group_was_converted">Group was converted to supergorup</string>
+    <string name="hint_enter_chat_title">Enter chat title</string>
+    <string name="titleRemoveLinksWhiteList">White list of antispam links:</string>
+    <string name="action_settings">Settings</string>
+    <string name="whitelist_links_description">(each link at new line)</string>
+    <string name="check_allow_stickers_links">Allow links for stickers</string>
+    <string name="chtTitleBanForLinks">Ban for links</string>
+    <string name="chkTitleBanForSticks">Ban for stickers</string>
+    <string name="logAction_autokick">Autokick banned user when try to return to chat</string>
+    <string name="logAction_return_to_chat">Return user to chat after temporary ban expired</string>
+    <string name="logAction_autoUnban">Remove user from ban-list after ban expired</string>
+    <string name="logAction_banForLink">Ban for spam</string>
+    <string name="logAction_banForSticker">Ban for sticker flood</string>
+    <string name="logAction_removedLink">Deleted Link message</string>
+    <string name="logAction_removedSticker">Deleted Sticker message</string>
+
+
+    <string name="label_allow_count">Allowed count per user:</string>
+    <string name="warntext_links_default_last">Last warning. Stop spam</string>
+    <string name="warntext_stickers_default_first">First warning. Stickers flood</string>
+    <string name="edit_chat_about_hint">Enter group description</string>
+    <string name="action_reset_warns">Reset antispam warn count</string>
+    <string name="title_ban_age">Ban time:</string>
+    <string name="check_return_after_bantime_expired">Return to chat after bantime expired</string>
+    <string name="title_group_info">Manage group</string>
+    <string name="logAction_stickersFloodWarn">Warn user of stikers flood</string>
+    <string name="logAction_linksFloodWarn">Warn user of ban for spam</string>
+    <string name="text_publish_banreason" formatted="false">User %username% was banned by reason: %reason%</string>
+
+    <string name="action_log">Events log</string>
+    <string name="title_activity_banlist">Ban list</string>
+    <string name="toast_banlist_empty">Ban list is empty</string>
+    <string name="msg_confirm_unban_all">Are you sure to unban all banned users?</string>
+    <string name="msg_unban_all_supergroup">Note: This action may be aborted by Telegram flood control if you have to many banned users!</string>
+    <string name="actionDeleteGroup">Delete group</string>
+    <string name="action_remove_from_ban">Remove from ban-list</string>
+    <string name="action_return_to_chat">Return to chat</string>
+    <string name="logAction_unbanByAdminInvite">Unban by admin invite</string>
+    <string name="action_show_log_notification">Show log notifications</string>
+    <string name="action_clear_log">Clear all log events</string>
+    <string name="btnYes">Yes</string>
+    <string name="chk_remove_messages_links">Remove messages with links</string>
+    <string name="chk_remove_messages_stickers">Remove message with stickers</string>
+    <string name="titleLogLifetime">Clear log after</string>
+    <string name="check_anyone_can_invite">Anyone can invite friends</string>
+    <string name="check_anyone_can_change_chat">Anyone can change title, photo and invite friends</string>
+    <string name="action_chk_show_only_created">Show only created groups</string>
+    <string name="action_chk_show_channels">Show channels</string>
+    <string name="check_autostart">Autorun at startup</string>
+    <string name="check_allow_mention_links">Allow mention links</string>
+    <string name="text_confirm_deletion_group">Are you sure to want to delete this group?\nThis action cannot be undone!</string>
+    <string name="text_delete_group">Yes. Delete this group</string>
+    <string name="button_delete">Delete</string>
+    <string name="toast_group_deleted">Group deleted</string>
+    <string name="title_delete_group">Delete group</string>
+    <string name="action_manage_channel">Manage channel</string>
+    <string name="chatType">Type:</string>
+    <string name="chatTypeGroup">Group</string>
+    <string name="chatTypeChannel">Channel</string>
+    <string name="chatTypeSuperGroup">Supergroup</string>
+    <string name="text_appstate_enabled">Application enabled</string>
+    <string name="text_appstate_stopped">Application stopped</string>
+    <string name="notification_show_hint">Tap to see log events</string>
+    <string name="label_total_groups">Total count:</string>
+    <string name="create_chat_title">Chat title</string>
+    <string name="dialog_new_chat_title">Create group</string>
+    <string name="group_created">Group created</string>
+    <string name="text_list_empty">List is empty</string>
+    <string name="text_ban_time">Ban date:</string>
+    <string name="text_ban_permanently">Permanent ban</string>
+    <string name="text_ban_temporary">Temporary ban. Expired at:</string>
+    <string name="action_unban_all">Unban all</string>
+    <string name="textRoleAdmin">Creator</string>
+    <string name="textRoleModerator">Moderator</string>
+    <string name="textChatRole">Role:</string>
+    <string name="check_enabled">Enable</string>
+    <string name="hint_enter_welcome_text">Enter welcome text for joined users</string>
+    <string name="hint_chat_description">Chat description</string>
+    <string name="labelWelcomeTextForJoinedUsers">Welcome text for new users</string>
+    <string name="titleManagingGroups">Managing groups</string>
+    <string name="title_list_of_banned_words">The list of banned words in chat:</string>
+    <string name="check_BanForWordBlackList">Ban user</string>
+    <string name="logAction_banForBlackWord">Ban for word</string>
+    <string name="warntext_banword_last">Last warn. Using banned word not allowed</string>
+    <string name="hint_each_whitelink_at_new_line">Each link at new line</string>
+    <string name="hint_blackwords">Enter each word at new line</string>
+    <string name="check_delMsgBlackWords">Delete message with blacklisted words</string>
+    <string name="logAction_removedBlackWordMessage">Deleted blacklisted words message</string>
+    <string name="action_change_user">Logout</string>
+    <string name="dialog_title_logout">Logout</string>
+    <string name="dialog_text_logout">Are you sure to logout current accout?</string>
+    <string name="dialog_title_auth">Auth</string>
+    <string name="auth_phone_hint">Enter your phone number</string>
+    <string name="auth_confirmcode_hint">Enter auth code sent via sms</string>
+    <string name="auth_cloud_pass_hint">Enter your cloud password</string>
+    <string name="btn_submit">Submit</string>
+    <string name="label_loading">Loading...</string>
+    <string name="check_remove_joined_message">Remove \'user joined\' message</string>
+    <string name="check_remove_leaved_message">Remove \'user left\' message</string>
+    <string name="labelOther">Other</string>
+    <string name="title_users">Chat members</string>
+    <string name="logAction_banUser">You banned a user</string>
+    <string name="caption_enter_value">Input new value:</string>
+    <string name="title_change_value">Change value</string>
+    <string name="caption_autostart">Autorun</string>
+    <string name="caption_users_whitelist">Users whitelist</string>
+    <string name="check_ignore_antispam_for_shared">Ignore antispam rules for shared contacts</string>
+    <string name="label_notice_ignore_antispam_for_shared">Ignore rules for shared contacts is enabled in settings</string>
+    <string name="toast_deletion_not_avail">Deletion messages available only for SuperGroup</string>
+    <string name="toast_access_denied_admin">Access denied.\nOnly creator can edit this option</string>
+    <string name="toast_user_unblacklisted">User was removed from black list</string>
+    <string name="toast_user_was_restored_to_chat">User was returned to chat</string>
+    <string name="chtTitleAlertOnBlackWordBan">Notify chat on ban</string>
+    <string name="mesage_user_banned_banword">User %1$s was banned for using banned word</string>
+    <string name="label_banwords_warntext">Warn message:</string>
+    <string name="chkWarnBeforeBanWord">Warn before ban</string>
+    <string name="action_open_chat_info">Open chat info</string>
+    <string name="action_open_userninfo">Open user info</string>
+    <string name="logAction_banwordsFloodWarn">Warn user of using banwords</string>
+    <string name="warntext_links_default_firts">First warning. Stop spam</string>
+    <string name="warntext_stickers_default_last">Last warning. Stickers flood</string>
+    <string name="warntext_banword_first">First warn. Using banned word not allowed</string>
+    <string name="action_copy">Copy</string>
+    <string name="text_about_app">Tools for Telegram messenger help you to administrate your groups.</string>
+    <string name="button_rate_us">If you like this app please click to rate us on GooglePlay</string>
+    <string name="role_moderator">Moderator</string>
+    <string name="role_editor">Editor</string>
+    <string name="role_editor_description_supegroup">Admin can invite and ban users, delete all user messages, change supergroup avatar and title</string>
+    <string name="role_moderator_description_supergroup">Moderator can only delete messages</string>
+    <string name="toast_user_role_changed">User role changed</string>
+    <string name="dialog_group_all_are_admins">This group marked as All Members Are Admins.\nDo you want to switch group administration to admins only?</string>
+    <string name="role_action_switch_continue">Switch and continue</string>
+    <string name="text_all_are_admins_group">All Members Are Admins</string>
+    <string name="label_ban_for_time">Ban for:</string>
+    <string name="label_note_ban_simple_groups">Note: In non-supergroups ban list is absent, so this app will just kick the user when trying to get back to the chat.</string>
+    <string name="chkSendBanReasonToChat">Send reason to chat</string>
+    <string name="selectBanForever">Permanent ban</string>
+    <string name="selectBanTemporary">Temporary ban</string>
+    <string name="label_ban_period">Ban duration</string>
+    <string name="label_ban_time_prefix">for</string>
+    <string name="text_unban_time">Ban expired time:</string>
+    <string name="title_ban_list">Ban List</string>
+    <string name="label_loading_chats_count">Loading chats...</string>
+    <string name="action_chats_info">Chats info</string>
+    <string name="action_open_group_link">Open group in Telegram</string>
+
+    <string name="app_thanks_to">Thanks to:</string>
+    <string name="thanks_to_list">All team of translators from transifex which help to translate app</string>
+    <string name="text_notification_descr_background">background service</string>
+    <string name="description_user_within_time">Count of warnings for user within:\n(If user has not violated the rules during this time, the count of warnings will be reset)</string>
+    <string name="text_warn_no_warn_user">No warn user before ban</string>
+    <string name="text_warn_on_last_warn">On last message</string>
+    <string name="text_warn_on_first_warn">On first message</string>
+    <string name="text_warn_on_first_last_warn">On first and last messages</string>
+    <string name="text_warn_on_second_and_last_warn">On 2\'d and last messages</string>
+    <string name="text_warn_always">Warn always</string>
+    <string name="text_warn_count_for_user_before_ban">Warnings for user:</string>
+    <string name="log_title_group">Group</string>
+    <string name="log_title_username">User</string>
+    <string name="log_title_time">Time</string>
+    <string name="log_title_bantime">Ban for</string>
+    <string name="log_title_banuntil">Ban until</string>
+    <string name="log_title_banurl">Link</string>
+    <string name="log_title_message">Message</string>
+    <string name="log_title_admin">Admin name</string>
+    <string name="log_title_bannedword">Ban word</string>
+    <string name="log_title_ban_reason">Reason</string>
+    <string name="chkBlackListedWords">Blacklisted words enabled</string>
+    <string name="title_set_user_role_admin">Set user role</string>
+    <string name="action_change_user_admin_role">Change moderation role</string>
+    <string name="chk_remove_banword_messages">Remove message containing this word</string>
+    <string name="chk_ban_user_for_banword">Ban user</string>
+    <string name="hint_enter_ban_word">Enter banned word</string>
+    <string name="btnAdd">Add</string>
+    <string name="title_add_banned_word">Add banned word</string>
+    <string name="toast_word_is_empty">Word is empty</string>
+    <string name="chk_remove_messages_voice">Remove message with voice</string>
+    <string name="chkTitleBanForVoice">Ban for voice</string>
+    <string name="logAction_banForVoice">Ban for voice flood</string>
+    <string name="warntext_voice_default_last">Last warning. Voice flood</string>
+    <string name="warntext_voice_default_first">First warning. Voices not allowed</string>
+    <string name="hint_first_user_warning">Message text for first warning</string>
+    <string name="hint_last_user_warning">Message text for last warning</string>
+
+    <string name="text_help_formatting" formatted="false"><![CDATA[<html> \n
+        <b>You can use next short tags to print variables in message</b>: \n
+        <b>%username%</b> - print @username if exists \n
+        <b>%name%</b> - print user First and Last name \n
+        <b>%count%</b> - print current user warnings count \n
+        <b>%max%</b> - print max allowed warnings per user \n
+        <b>%left%</b> - print number of remaining warnings for user \n
+        <b>%u_id%</b> - print user id \n
+        <b>%c_id%</b> - print chat id \n
+        <b>%c_title%</b> - print chat title \n
+        PS: <i>count, max, left</i> variables available only for task warns.
+        \n
+        <b>Example</b>: \n
+        <i>%username% warning %count% of %max%! Spam not allowed! \n
+        Remains %left% warnings before you will be banned.</i> \n
+        <b>Will be printed</b>: \n
+        <i>@user warning 1 of 5! Spam not allowed! \n
+        Remains 4 warnings before you will be banned.</i>
+        </html>]]></string>
+    <string name="list_of_banned_words">List of banned words in chat</string>
+    <string name="chk_remove_message_with_banword">Remove\nmessage</string>
+    <string name="chk_ban_user_with_banword">Ban\nuser</string>
+    <string name="action_add_banword">Add word</string>
+    <string name="action_clear_banwords">Clear list</string>
+    <string name="title_dialog_confirm">Confirm action</string>
+    <string name="text_clear_all_banwords_for_chat">Confirm to clear all banned words for this chat?</string>
+    <string name="check_show_icon_in_bar">Always show icon in system bar</string>
+    <string name="text_show_icon_in_system_bar">this option can help if your system kills the app process</string>
+    <string name="text_banned_words_list_empty">List is empty</string>
+    <string name="action_banwords_import_from_chat">Import from other chat banwords list</string>
+    <string name="title_import_words">Select words to import</string>
+    <string name="text_flood_messages_count_per_user">Messages count limit per user</string>
+    <string name="text_flood_control_watch_within_time">Flood control within time:</string>
+    <string name="logAction_banForFlood">Ban for flood</string>
+    <string name="warntext_flood_default_last">Last warning. Prevent flooding</string>
+    <string name="btnBanUser">Ban</string>
+    <string name="btn_banned_words_list_empty">Banned words list is empty</string>
+    <string name="banned_words_count">%d banned words for this chat</string>
+    <string name="logAction_removedFloodMessage">Deleted flood message</string>
+    <string name="logAction_removedVoice">Deleted Voice message</string>
+    <string name="text_antispam_alert_title">AdminTools Bot Alert!</string>
+    <string name="caption_alerts_title">Antispam alert title</string>
+    <string name="action_add_link_to_wl">Add link to white list</string>
+    <string name="title_warning_text_before_ban">Warning text for users before ban:</string>
+    <string name="title_warn_help">formatting help</string>
+    <string name="ban_for_flood">Ban user</string>
+    <string name="labelChatTasks">Chat tasks</string>
+    <string name="labelChatCommands">Commands for chat</string>
+    <string name="text_clear_all_commands_for_chat">Confirm to clear all commands for this chat?</string>
+    <string name="title_dialog_clear_all">Clear all</string>
+    <string name="labelChatCommand">Command:\n(for example \'/command\')</string>
+    <string name="label_chatCommand_action">Action for command:</string>
+    <string name="chk_chatcommand_only_admin_can_execute">Only admin can execute command</string>
+    <string name="title_chat_commands">Chat commands</string>
+    <string name="btn_chat_commands_manage">Edit commands</string>
+    <string name="text_label_inviter">Inviter:</string>
+    <string name="error_auth_pin_incorrect">Error\nCloud password (PIN) is incorrect</string>
+    <string name="error_phone_not_registered">This phone number is not registered.\nTry againg?</string>
+    <string name="label_commands_count_in_chat">for this chat</string>
+    <string name="label_no_commands_in_chat">Commands not yet added</string>
+    <string name="title_select_task_for_chat">Select type of task to apply for chat</string>
+    <string name="toast_task_already_applied">This task is already added.\nLong click to remove it</string>
+    <string name="title_add_new_task_for_chat">Add new task</string>
+    <string name="hint_press_to_add_command">Press Add to add new command</string>
+    <string name="title_task_stickers">Stickers task</string>
+    <string name="title_task_voices">Voices task</string>
+    <string name="title_task_links">Links task (antispam)</string>
+    <string name="text_command_leave_not_error_creator">Creator can\'t leave the channel</string>
+    <string name="text_command_execute_access_denied">Access denied.\nOnly admin can execute this command</string>
+    <string name="warntext_bangame_first">First warn. Sharing Game not allowed in this chat</string>
+    <string name="warntext_bangame_last">Last warning. Sharing Game flood</string>
+    <string name="logAction_banForGame">Ban for game sharing</string>
+    <string name="title_task_game">Games via @gamebot</string>
+    <string name="chk_remove_messages_game">Remove message with Games</string>
+    <string name="chkTitleBanForGames">Ban for Games</string>
+    <string name="title_task_add_stickers">Stickers</string>
+    <string name="title_task_add_voices">Voices</string>
+    <string name="title_task_add_link">Links (antispam)</string>
+    <string name="title_task_add_games">Games via @gamebot</string>
+    <string name="logAction_execCommandError">Error executing command</string>
+    <string name="title_banwords">Blacklisted words</string>
+    <string name="title_flood_control">Flood control</string>
+    <string name="warntext_banphoto_first">First warning. Photos flood not allowed</string>
+    <string name="warntext_banphoto_last">Last warning. Stop the photo flood</string>
+    <string name="logAction_banForPhotos">Ban for photos flood</string>
+    <string name="title_task_add_photos">Photos</string>
+    <string name="logAction_removedGameMessage">Deleted Game message</string>
+    <string name="logAction_removedPhoto">Deleted Photo message</string>
+    <string name="title_task_photos">Photos</string>
+    <string name="chk_remove_messages_photos">Remove messages with Photos</string>
+    <string name="chkTitleBanForPhotos">Ban for photos</string>
+    <string name="title_task_docs">Files (Documents)</string>
+    <string name="chk_remove_messages_docs">Remove messages with files</string>
+    <string name="chkTitleBanForDocs">Ban for files</string>
+    <string name="logAction_removedDocs">Deleted Document</string>
+    <string name="logAction_DocsFloodWarn">Warn user of documents flood</string>
+    <string name="logAction_PhotosFloodWarn">Warn user of photos flood</string>
+    <string name="title_task_add_documents">Documents</string>
+    <string name="logAction_banForDocs">Ban for Documents flood</string>
+    <string name="warntext_bandocs_first">First warning. Attachments not allowed</string>
+    <string name="warntext_bandocs_last">Last warning. Attachments flood</string>
+    <string name="title_remove_taskfrom_added">Remove task</string>
+    <string name="text_confirm_remove_task">Are you sure to remove this task?</string>
+    <string name="title_task_gif">GIF</string>
+    <string name="chk_remove_messages_gif">Remove messages with GIF</string>
+    <string name="chkTitleBanForGif">Ban for Gif</string>
+    <string name="logAction_banForGifs">Ban for GIF flood</string>
+    <string name="logAction_removedGif">Deleted Gif message</string>
+    <string name="logAction_gifsFloodWarn">Warn user of Gif flood</string>
+    <string name="title_task_add_gif">GIF</string>
+    <string name="warntext_bangifs_first">First warning. Gifs flood</string>
+    <string name="warntext_bangifs_last">Last warning. Stop the Gifs flood</string>
+    <string name="title_task_audio">Audio</string>
+    <string name="chk_remove_messages_audio">Remove Messages with Audio</string>
+    <string name="chkTitleBanForAudio">Ban for Audio</string>
+    <string name="logAction_banForAudio">Ban for Audio</string>
+    <string name="logAction_removedAudio">Deleted Audio</string>
+    <string name="logAction_audioFloodWarn">Warn user of using audio</string>
+    <string name="warntext_banAudio_first">First warning. Audios flood</string>
+    <string name="warntext_banAudio_last">Last warning. Stop the Audios flood</string>
+    <string name="title_task_video">Video</string>
+    <string name="chk_remove_messages_video">Remove message with Video</string>
+    <string name="chkTitleBanForVideo">Ban for Video</string>
+    <string name="warntext_banVideo_first">First warning. Videos flood</string>
+    <string name="warntext_banVideo_last">Last warning. Videos flood</string>
+    <string name="logAction_banForVideo">Ban for Videos flood</string>
+    <string name="logAction_removedVideo">Deleted Video message</string>
+    <string name="logAction_videoFloodWarn">Warn user of videos flood</string>
+    <string name="logAction_removedMutedMessage">Deleted message from muted user</string>
+    <string name="text_select_users_to_mute">Select users to mute them.\nAll new messages from these users will be deleted</string>
+    <string name="title_task_mute_users">Mute users</string>
+    <string name="text_no_muted_users">No muted users for this chat</string>
+    <string name="label_select_user_to_mute">Select user to mute him</string>
+    <string name="label_select_user_to_remove_mute">Select user to remove him from mute</string>
+    <string name="toast_user_added_to_muted">User added to mute</string>
+    <string name="toast_user_removed_from_muted">User removed from mute</string>
+
+    <string name="dialog_recent_changes">
+        New in v.%s
+        \n[+] temporary mute user instead of ban for attachments flood
+        \n[+] search in user list
+        \n[*] some fixes
+    </string>
+    <string name="btnSendNewSmsCode">Resend SMS Code</string>
+    <string name="btnRequestAuthCall">Call auth code</string>
+    <string name="title_chat_in_readonly_mode">Notify members that chat is in read-only mod:</string>
+    <string name="title_chat_no_in_readonly">Notify members that chat is no longer in read-only mod:</string>
+    <string name="text_chat_in_readonly_now">This chat is now in read-only mode.</string>
+    <string name="text_chat_not_in_readonly">This chat is no longer in read-only mode.</string>
+    <string name="btnSend">Send</string>
+    <string name="chkMuteAllMembers">Mute all except admins</string>
+    <string name="chkMuteJoinedMembers">Mute all new joined users</string>
+    <string name="logAction_sendViaBotError">Send message via Bot error</string>
+    <string name="text_bot_not_selected">Bot not selected</string>
+    <string name="text_send_notifications_as_bot">Send notifications as Bot</string>
+    <string name="text_select_bot_none">Select None for disable bot to this group</string>
+    <string name="option_remove_bot">Remove bot from list</string>
+    <string name="title_select_bot">Select Bot</string>
+    <string name="hint_botfather_for_createbot">Use BotFather to cretae new bot</string>
+    <string name="hint_insert_bot_token">Insert bot token</string>
+    <string name="hint_select_existing_bot_token">or select existing bot from list below</string>
+    <string name="action_mute_user">Mute user (Read-only)</string>
+    <string name="text_mute_user_now">You need to enable Mute task in the chat settings to mute user.\nEnable now?</string>
+    <string name="btnSkip">Skip</string>
+    <string name="text_chat_title">Title:</string>
+    <string name="text_hint_cmd_change_title">Please specify chat title after command.\nExample:</string>
+    <string name="text_confirm_select_group_for_logging">Set this group to forward log events?</string>
+    <string name="logAction_userTitleChanged">The user has changed the title of the group</string>
+    <string name="logAction_gameFloodWarn">Warn user of Game flood</string>
+    <string name="logAction_voiceFloodWarn">Warn user of voice flood</string>
+    <string name="log_title_oldChangedChatTitle">Old title</string>
+    <string name="title_backup_restore_settings">Backup/Restore Settings</string>
+    <string name="text_backup_description">Save backup to sdcard and Telegram Cloud Storage</string>
+    <string name="btn_backup_settings">Create Backup</string>
+    <string name="btn_backup_restore_settings">Restore backup</string>
+    <string name="text_backup_restore_description">Select backup file from sdcard to restore. All existing tasks for chats will be overwritten!</string>
+    <string name="text_backup_saved">File saved to \'%s\'.\n\nDo you want to save backup to Telegram Cloud Storage?</string>
+    <string name="toast_user_was_removed">User was removed from chat.\nUser can join again if wants</string>
+    <string name="toast_error_remove_user">Remove user error</string>
+    <string name="logAction_removedJoinMessage">Removed Join message</string>
+    <string name="chtTitlePublicBan">Publish ban to chat</string>
+    <string name="logAction_removeLeaveMessage">Removed User Leave message</string>
+    <string name="text_dozen_battery_white_list_api23">
+        <b>Note:</b> If the application is suspended in the background, you must add it to Android Doze whitelist in
+        \n<b>Settings -> Battery -> Menu -> Battery Optimization</b>b>
+        \n(or <b>Settings->Apps->Advanced->Battery Optimization</b>)
+        \nand exclude app from optimization to allow app work in background.</string>
+    <string name="text_battery_optimization_state_disabled">Current State: Ok. App optimization disabled</string>
+    <string name="text_battery_optimization_state_enabled">Current State: App optimization enabled. App may stop work in the background</string>
+    <string name="text_note_battery_optimization"><b>Note:</b> <font color='#009688'>Battery Optimization</font></string>
+    <string name="toast_bottoken_is_empty">Please enter token first</string>
+    <string name="chtTitleMuteInsteadBan">Mute instead Ban</string>
+    <string name="logAction_userWasMuted">User was muted to send messages by type</string>
+    <string name="logAction_userWasUnMuted">User was unmuted after ban expired</string>
+    <!-- Date Format patterns https://developer.android.com/reference/java/text/SimpleDateFormat.html -->
+    <string name="dateformat_full">d MMMM, yyyy hh:mm:ss aa</string>
+    <string name="status_online">online</string>
+    <string name="title_dialog_welcome_message">Welcome message</string>
+    <string name="dialog_title_help_formatting">Formattin help</string>
+    <string name="btnOk">Ok</string>
+    <string name="title_search">Search</string>
+    <string name="hint_search">Enter user given name, username or id for search:</string>
+    <string name="text_user_has_muted_ban" >User has muted ban</string>
+    <string name="btn_main_show_admin_groups">Show administered groups</string>
+    <string name="btn_main_stop_app">Stop application</string>
+    <string name="btn_main_run_app">Run application</string>
+    <string name="action_about_app">About</string>
+    <string name="title_battery_optimization">Battery Optimization</string>
+    <string name="action_copy_log_text">Copy Message</string>
+    <string name="title_dialog_chat_stats">Chats stat</string>
+    <string name="toast_invite_link_created">Invite link created</string>
+    <string name="title_dialog_upgrade_group">Upgrade group</string>
+    <string name="btn_upgrate_to_supegroup">Upgrade to supergroup</string>
+    <string name="toast_warnings_counter_reset">Warnings counter is reset</string>
+    <string name="text_stickers_link_description">e.g. telegram.me/addstickers/animals</string>
+    <string name="text_mention_link_description">e.g. @username links</string>
+    <string name="title_forbidden_words">Forbidden words</string>
+    <string name="btn_switch_muted_members">Muted members</string>
+    <string name="btn_switch_all_users">All members</string>
+    <string name="hint_enter_command">enter command here</string>
+    <string name="hint_enter_command_answer">Enter answer here</string>
+    <string name="title_log">Log</string>
+    <string name="chkSendLogToChat">Send Log to chat</string>
+    <string name="text_select_chat_to_forward_log">Select chat to forward logging messages to this chat</string>
+    <string name="log_title_user_id">User id</string>
+    <string name="text_checking_auth">Checking auth...</string>
+    <string name="toast_auth_input_is_empty">This field can not be empty</string>
+    <string name="text_release_date">Release date:</string>
+    <string name="text_version">Version:</string>
+    <string name="text_source_code">Source code:</string>
+    <string name="text_contact_for_feedback">Any question(english prefer):</string>
+
+
+    <string-array name="ban_times">
+        <item>Min.</item>
+        <item>Hour.</item>
+        <item>Day.</item>
+        <item>Month.</item>
+    </string-array>
+
+    <string-array name="auto_ban_times">
+        <item>Forever</item>
+        <item>Min.</item>
+        <item>Hour.</item>
+        <item>Day.</item>
+    </string-array>
+
+    <string-array name="log_lifetime">
+        <item>Month</item>
+        <item>Week</item>
+        <item>3 days</item>
+        <item>1 day</item>
+    </string-array>
+
+    <string-array name="times_during_warnings">
+        <item>During all time</item>
+        <item>Min.</item>
+        <item>Hour.</item>
+        <item>Day.</item>
+    </string-array>
+
+    <string-array name="command_types">
+        <item>Text answer</item>
+        <item>Kick self user</item>
+        <item>Change title</item>
+    </string-array>
+
+    <string-array name="commands_plural">
+        <item>command</item><!-- 1 command -->
+        <item>commands</item><!-- 2 commands -->
+        <item>commands</item><!-- 5 commands -->
+    </string-array>
+
+    <string-array name="muted_users_plural">
+        <item>muted user</item><!-- 1 item -->
+        <item>muted users</item><!-- 2 items -->
+        <item>muted users</item><!-- 5 items -->
+    </string-array>
+
+</resources>
